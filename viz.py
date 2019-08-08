@@ -3,7 +3,6 @@
 # adapt xyz position array data and show in 3D axis
 
 import matplotlib.pyplot as plt
-import data_utils
 import numpy as np
 import h5py
 import os
