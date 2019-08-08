@@ -9,7 +9,6 @@ from mpl_toolkits.mplot3d import Axes3D
 import viz
 import time
 import copy
-import data_utils
 import scipy.io
 
 def main():
@@ -20,7 +19,7 @@ def main():
         return a # ndarray type
 
     xyz_info = read_mat(file) # xyz,joint,frame
-    frame_number = xyz_info.shape(2) # get frame number of current file
+    frame_number = xyz_info.shape[2] # get frame number of current file
     xyz_gt = xyz_info.transpose(2,1,0)
 
 
